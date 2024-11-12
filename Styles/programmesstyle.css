@@ -84,114 +84,167 @@ header {
     color: #333;
 }
 
-.responsive-container {
+/* Base styles */
+.underconstruction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px; /* Optional: add padding for spacing on smaller screens */
+    box-sizing: border-box;
+}
+
+.underconstruction img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer Base Styles */
+.footer {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
-    max-width: 1320px;
-    margin: auto;
-    margin-top: 8px;
-    padding: 20px;
-    border: 1px solid #d1d1d1; /* Thin, light gray border for a clean look */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow for a subtle depth */
-    background-color: #ffffff; /* White background for clarity */
+    padding: 30px;
+    background-color: #222;
+    color: #ddd;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
 
-/* Optional inner border effect for an elegant touch */
-.responsive-container::before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    bottom: -4px;
-    left: -4px;
-    right: -4px;
-    border: 1px solid rgba(0, 0, 0, 0.05); /* Slight inner border effect */
-    border-radius: 12px; /* Aligns with outer container border */
-    pointer-events: none; /* Allows interaction with content */
-}
-
-
-
-.image-container {
+/* Footer Columns */
+.footer-column {
     flex: 1;
-    position: relative;
-    overflow: hidden;
-    height: 100%;
+    min-width: 200px;
+    margin: 10px;
+    color: #ddd;
 }
 
-.event-image {
-    width: 100%;
-    transition: transform 0.3s ease;
+/* Institute Logo and Name */
+.institute-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
-.image-container:hover .event-image {
-    transform: scale(1.1);
+.institute-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
 }
 
-.update-section {
-    flex: 1.4;
-    max-height: 300px;
-    overflow-y: scroll;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    margin-left: 10px;
+.institute-text h4 {
+    font-size: 16px;
+    color: #fff;
 }
 
-.update-title {
-    font-size: 1.5em;
-    font-weight: bold;
+/* Location and Website Icons and Links */
+.location,
+.website {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    color: #444;
 }
 
-.event-update {
-    display: block;
-    padding: 10px 0;
-    font-weight: bold;
-    color: #2374ff;
+.icon {
+    color: #ffc107;
+    margin-right: 8px;
+}
+
+.website-link {
+    color: #ddd;
     text-decoration: none;
-    animation: blink 1.5s linear infinite;
+    font-weight: bold;
 }
 
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+.website-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
 }
 
-/* Scrolling effect */
-.update-section::-webkit-scrollbar {
-    width: 6px;
-}
-.update-section::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
+.quick-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Responsive design */
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+.quick-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #ffc107;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    margin-bottom: 8px;
+}
+
+.social-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+.social-links a:hover {
+    color: #ffc107;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
+
 @media (max-width: 1320px) {
-    .responsive-container {
-        max-width: 1100px;
+    .underconstruction img {
+        width: 90%;
     }
 }
 
 @media (max-width: 1100px) {
-    .responsive-container {
-        flex-direction: column;
-        align-items: center;
+    .underconstruction img {
+        width: 80%;
     }
 }
 
 @media (max-width: 900px) {
-    .responsive-container {
-        padding: 10px;
-    }
-
-    .update-section {
-        max-height: 200px;
+    .underconstruction img {
+        width: 70%;
     }
 }
+
 
 @media (max-width: 1320px) {
     header {
