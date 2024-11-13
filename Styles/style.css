@@ -98,7 +98,7 @@ header {
 }
 
 .image-container, .update-section {
-    max-height: 300px; /* Keeps height matched for both sections */
+    max-height: 300px;
 }
 
 .responsive-container::before {
@@ -411,6 +411,22 @@ header {
     font-weight: bold;
     border-bottom: 2px solid #444;
     padding-bottom: 5px;
+}
+
+.developedby {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #444444;
+}
+
+.developedby p {
+    color: #ddd;
+}
+
+.developedby p a{
+    background-color: transparent;
+    color: red;
+    list-style-type: none;
 }
 
 @media (max-width: 768px) {

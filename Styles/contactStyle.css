@@ -323,6 +323,22 @@ header {
     padding-bottom: 5px;
 }
 
+.developedby {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #444444;
+}
+
+.developedby p {
+    color: #ddd;
+}
+
+.developedby p a{
+    background-color: transparent;
+    color: red;
+    list-style-type: none;
+}
+
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
