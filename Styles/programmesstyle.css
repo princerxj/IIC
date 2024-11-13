@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #f5f5f5, #eaeaea); /* Light gray gradient */
+    background: linear-gradient(135deg, #f5f5f5, #eaeaea);
     color: #333;
 }
 
@@ -84,14 +84,13 @@ header {
     color: #333;
 }
 
-/* Base styles */
 .underconstruction {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     overflow: hidden;
-    padding: 10px; /* Optional: add padding for spacing on smaller screens */
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -101,7 +100,6 @@ header {
     display: block;
 }
 
-/* Footer Base Styles */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -113,7 +111,6 @@ header {
     font-size: 14px;
 }
 
-/* Footer Columns */
 .footer-column {
     flex: 1;
     min-width: 200px;
@@ -121,7 +118,6 @@ header {
     color: #ddd;
 }
 
-/* Institute Logo and Name */
 .institute-info {
     display: flex;
     align-items: center;
@@ -139,7 +135,6 @@ header {
     color: #fff;
 }
 
-/* Location and Website Icons and Links */
 .location,
 .website {
     display: flex;

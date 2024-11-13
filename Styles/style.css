@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #f5f5f5, #eaeaea); /* Light gray gradient */
+    background: linear-gradient(135deg, #f5f5f5, #eaeaea);
     color: #333;
 }
 
@@ -92,13 +92,10 @@ header {
     margin: auto;
     margin-top: 8px;
     padding: 20px;
-    border: 1px solid #d1d1d1; /* Thin, light gray border for a clean look */
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow for a subtle depth */
-    background-color: #ffffff; /* White background for clarity */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+    background-color: #ffffff; 
 }
 
-/* Optional inner border effect for an elegant touch */
 .responsive-container::before {
     content: "";
     position: absolute;
@@ -106,9 +103,7 @@ header {
     bottom: -4px;
     left: -4px;
     right: -4px;
-    border: 1px solid rgba(0, 0, 0, 0.05); /* Slight inner border effect */
-    border-radius: 12px; /* Aligns with outer container border */
-    pointer-events: none; /* Allows interaction with content */
+    pointer-events: none; 
 }
 
 
@@ -160,7 +155,6 @@ header {
     50% { opacity: 0; }
 }
 
-/* Scrolling effect */
 .update-section::-webkit-scrollbar {
     width: 6px;
 }
@@ -169,7 +163,6 @@ header {
     border-radius: 10px;
 }
 
-/* Responsive design */
 @media (max-width: 1320px) {
     .responsive-container {
         max-width: 1100px;
@@ -186,6 +179,7 @@ header {
 @media (max-width: 900px) {
     .responsive-container {
         padding: 10px;
+        margin: 6px 6px;
     }
 
     .update-section {
@@ -234,5 +228,63 @@ header {
 
     .nav-bar ul li {
         margin: 10px 0;
+    }
+}
+
+.about {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.about h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+.about hr {
+    width: 80%;
+    border: 0;
+    border-top: 1px solid #aeac9e;
+    margin: 20px auto;
+}
+
+@media (max-width: 1320px) {
+    .about h1 {
+        font-size: 2.5rem;
+    }
+    .about p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about h1 {
+        font-size: 2.2rem;
+    }
+    .about p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .about h1 {
+        font-size: 2rem;
+    }
+    .about p {
+        font-size: 0.85rem;
     }
 }

@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #f5f5f5, #eaeaea); /* Light gray gradient */
+    background: linear-gradient(135deg, #f5f5f5, #eaeaea);
     color: #333;
 }
 
@@ -84,14 +84,13 @@ header {
     color: #333;
 }
 
-/* Base styles */
 .underconstruction {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     overflow: hidden;
-    padding: 10px; /* Optional: add padding for spacing on smaller screens */
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -102,7 +101,6 @@ header {
     border-radius: 3%;
 }
 
-/* Base styles */
 .contact-buttons {
     display: flex;
     justify-content: center;
@@ -121,7 +119,6 @@ header {
     transition: background-color 0.3s;
   }
   
-  /* Button hover effect */
   .btn:hover {
     background-color: #0056b3;
   }
@@ -148,12 +145,12 @@ header {
       gap: 15px;
     }
     .btn {
-      width: 80%; /* Full-width buttons on smaller screens */
+      width: 80%; 
       font-size: 0.85rem;
     }
   }
 
-  /* Base styles */
+
 .contact-methods {
     display: flex;
     justify-content: space-around;
@@ -179,8 +176,7 @@ header {
     margin: 0;
   }
   
-  /* Responsive styles */
-  @media (max-width: 1320px) {
+    @media (max-width: 1320px) {
     .icon {
       width: 60px;
       height: 60px;
@@ -215,8 +211,6 @@ header {
     }
   }
   
-  
-/* Footer Base Styles */
 .footer {
     display: flex;
     justify-content: space-between;
@@ -228,7 +222,6 @@ header {
     font-size: 14px;
 }
 
-/* Footer Columns */
 .footer-column {
     flex: 1;
     min-width: 200px;
@@ -236,7 +229,6 @@ header {
     color: #ddd;
 }
 
-/* Institute Logo and Name */
 .institute-info {
     display: flex;
     align-items: center;
@@ -254,7 +246,6 @@ header {
     color: #fff;
 }
 
-/* Location and Website Icons and Links */
 .location,
 .website {
     display: flex;
