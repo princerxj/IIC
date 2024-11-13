@@ -297,7 +297,128 @@ header {
     margin: 20px auto;
 }
 
-/* Combined @media (max-width: 1320px) */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #222;
+    color: #ddd;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    color: #ddd;
+}
+
+.institute-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.institute-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.institute-text h4 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.location,
+.website {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: #ffc107;
+    margin-right: 8px;
+}
+
+.website-link {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.website-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+.quick-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+.quick-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #ffc107;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    margin-bottom: 8px;
+}
+
+.social-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+.social-links a:hover {
+    color: #ffc107;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
+
 @media (max-width: 1320px) {
     .responsive-container {
         max-width: 1100px;
@@ -316,7 +437,6 @@ header {
     }
 }
 
-/* Combined @media (max-width: 1100px) */
 @media (max-width: 1100px) {
     .responsive-container {
         flex-direction: column;
@@ -341,7 +461,6 @@ header {
     }
 }
 
-/* Combined @media (max-width: 900px) */
 @media (max-width: 900px) {
     .responsive-container {
         padding: 10px;
