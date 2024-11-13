@@ -211,7 +211,7 @@ header {
     }
   }
   
-.footer {
+  .footer {
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -251,11 +251,12 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    gap: 8px;
 }
 
 .icon {
     color: #ffc107;
-    margin-right: 8px;
+    font-size: 18px;
 }
 
 .website-link {
