@@ -143,6 +143,7 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
+    padding-bottom: 10px;
     color: #444;
 }
 
@@ -152,12 +153,21 @@ header {
     font-weight: bold;
     color: #2374ff;
     text-decoration: none;
-    animation: blink 1.5s linear infinite;
+    animation: scroll-up 2.5s linear infinite;
 }
 
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+@keyframes scroll-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(-100%);
+    }
 }
 
 .update-section::-webkit-scrollbar {
