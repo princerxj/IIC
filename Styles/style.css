@@ -196,10 +196,15 @@ header {
 
 .update-title {
     font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    padding-top: 10px;
     padding-bottom: 10px;
-    color: #444;
+    color: #ffffff;
+    background-color: rgba(255, 183, 0, 0.686);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
 .event-update {
