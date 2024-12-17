@@ -1,0 +1,32 @@
+[
+    {
+        "Name" : "Sujit Sampat Sakore",
+        "Branch" : "Computer Science and Engineering",
+        "Role" : "Member"
+    },
+    {
+        "Name" : "Hrishab Raj",
+        "Branch" : "Electronics and Communication Engineering",
+        "Role" : "Member"
+    },
+    {
+        "Name" : "Battina Rachana",
+        "Branch" : "Civil Engineering",
+        "Role" : "Member"
+    },
+    {
+        "Name" : "Prince Raj",
+        "Branch" : "Electronics and Communication Engineering",
+        "Role" : "Web Developer"
+    },
+    {
+        "Name" : "Chomangli T Sangtam",
+        "Branch" : "Electrical and Electronics Engineering",
+        "Role" : "Member"
+    },
+    {
+        "Name" : "Mhademo R Kikon",
+        "Branch" : "Electronics and Communication Engineering",
+        "Role" : "Member"
+    }
+]

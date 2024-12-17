@@ -1,0 +1,74 @@
+[
+    {
+        "Name" : "Prof. (Dr.). A. Elayaperumal",
+        "Post1" : "Director, NIT Nagaland",
+        "Post2" : "President",
+        "Image-src" : "Director_ElayaPerumal.jpeg"
+    },
+    {
+        "Name" : "Dr. Dipu Sarkar",
+        "Post1" : "Associate Professor, NIT Nagaland",
+        "Post2" : "Vice President and Convenor",
+        "Image-src" : "dipu-sarkar.jpg"
+    },
+    {
+        "Name" : "Dr. D. Ganga",
+        "Post1" : "Assistant Professor, NIT Nagaland",
+        "Post2" : "Start-up activity & IPR coordinatior",
+        "Image-src" : "Ms. D. Ganga.jpg"
+    },
+    {
+        "Name" : "Dr. Nagaraju Baydeti",
+        "Post1" : "Assistant Professor, NIT Nagaland",
+        "Post2" : "Internship Coordinator",
+        "Image-src" : "Mr. Nagaraju Baydeti.jpg"
+    },
+    {
+        "Name" : "Dr. P. Chinnamuthu",
+        "Post1" : "Associate Professor, NIT Nagaland",
+        "Post2" : "Social media coordinatior",
+        "Image-src" : "Dr. P. Chinnamuthu.jpg"
+    },
+    {
+        "Name" : "Dr. Arambam Neelima",
+        "Post1" : "Assistant Professor, NIT Nagaland",
+        "Post2" : "ARIIA coordinator",
+        "Image-src" : "Dr. Arambam Neelima.jpg"
+    },
+    {
+        "Name" : "Dr. J. Arul Valan",
+        "Post1" : "Assistant Professor, NIT Nagaland",
+        "Post2" : "NIRF coordinatior",
+        "Image-src" : "Mr. J. Arul Valan.jpg"
+    },
+    {
+        "Name" : "Prof. R. Kumar",
+        "Post1" : "Dean (Administration), NIT Nagaland",
+        "Post2" : "Member",
+        "Image-src" : "Dr. R. Kumar.jpg"
+    },
+    {
+        "Name" : "Prof. Themrichon Tuithung",
+        "Post1" : "Dean (Student Affairs), NIT Nagaland",
+        "Post2" : "Member",
+        "Image-src" : "Dr.Themrichon Tuithung.jpg"
+    },
+    {
+        "Name" : "Dr. A. Wati Walling",
+        "Post1" : "Dean (Academic), NIT Nagaland",
+        "Post2" : "Member",
+        "Image-src" : "Dr. A. Wati Walling.jpg"
+    },
+    {
+        "Name" : "Dr. Amit Kumar Singh",
+        "Post1" : "Assistant Professor, NIT Nagaland",
+        "Post2" : "Member",
+        "Image-src" : "Dr_Amit_Kumar_Singh.jpg"
+    },
+    {
+        "Name" : "Dr. Nzanthung Ngullie",
+        "Post1" : "Assistant Professor, NIT Nagaland",
+        "Post2" : "Member",
+        "Image-src" : "Dr_Nzanthung_Ngullie.jpg"
+    }
+]
