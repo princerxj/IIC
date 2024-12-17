@@ -3,7 +3,7 @@ function toggleNav() {
     navBar.classList.toggle('active');
 }
 
-fetch('../Data/faculty-section.json')
+fetch('/IIC/Data/faculty-section.json')
   .then(response => {
     console.log('Fetching URL:', response.url); 
     if (!response.ok) {
