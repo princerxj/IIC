@@ -17,7 +17,7 @@ fetch('../Data/faculty-section.json')
     data.forEach((item, index) => {
       const card = cardTemplate.cloneNode(true);
       const img = card.querySelector('.card-image');
-      img.src = `/images/members/${item['Image-src']}`;
+      img.src = `/Images/Members/${item['Image-src']}`;
       img.alt = item.Name;
 
       const name = card.querySelector('.card-name');
