@@ -3,7 +3,7 @@ function toggleNav() {
     navBar.classList.toggle('active');
 }
 
-fetch('/Data/faculty-section.json')
+fetch('./Data/faculty-section.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Failed to fetch JSON data');
