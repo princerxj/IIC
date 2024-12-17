@@ -3,13 +3,15 @@ function toggleNav() {
     navBar.classList.toggle('active');
 }
 
-fetch('./Data/faculty-section.json')
+fetch('../Data/faculty-section.json')
   .then(response => {
+    console.log('Fetching URL:', response.url); 
     if (!response.ok) {
-      throw new Error('Failed to fetch JSON data');
+      throw new Error(`Failed to fetch JSON data: ${response.statusText}`);
     }
     return response.json();
   })
+
   .then(data => {
     const cardContainer = document.getElementById('card-container');
     const cardTemplate = document.getElementById('card-template');
