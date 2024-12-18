@@ -2,31 +2,37 @@
     {
         "Name" : "Sujit Sampat Sakore",
         "Branch" : "Computer Science and Engineering",
-        "Role" : "Member"
+        "Role" : "Member",
+        "Image-src" : "Sujit Sampat Sakore.JPG"
     },
     {
         "Name" : "Hrishab Raj",
         "Branch" : "Electronics and Communication Engineering",
-        "Role" : "Member"
+        "Role" : "Member",
+        "Image-src" : "hrishabh-raj.png"
     },
     {
         "Name" : "Battina Rachana",
         "Branch" : "Civil Engineering",
-        "Role" : "Member"
+        "Role" : "Member",
+        "Image-src" : "Rachana Battina.jpg"
     },
     {
         "Name" : "Prince Raj",
         "Branch" : "Electronics and Communication Engineering",
-        "Role" : "Web Developer"
+        "Role" : "Web Developer",
+        "Image-src" : "Prince Raj.png"
     },
     {
         "Name" : "Chomangli T Sangtam",
         "Branch" : "Electrical and Electronics Engineering",
-        "Role" : "Member"
+        "Role" : "Member",
+        "Image-src" : "CHOMANGLI T SANGTAM.jpg"
     },
     {
         "Name" : "Mhademo R Kikon",
         "Branch" : "Electronics and Communication Engineering",
-        "Role" : "Member"
+        "Role" : "Member",
+        "Image-src" : "Mhademo R Kikon.jpg"
     }
 ]

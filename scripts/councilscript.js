@@ -38,3 +38,39 @@ fetch('/IIC/Data/faculty-section.json')
 .catch(error => {
     console.error('Error:', error);
 });
+
+fetch('/IIC/Data/student-section.json')
+  .then(response => {
+    console.log('Fetching URL:', response.url); 
+    if (!response.ok) {
+      throw new Error(`Failed to fetch JSON data: ${response.statusText}`);
+    }
+    return response.json();
+  })
+
+  .then(data => {
+    const cardContainer = document.getElementById('card-container-student');
+    const cardTemplate = document.getElementById('card-template');
+
+    data.forEach((item, index) => {
+      const card = cardTemplate.cloneNode(true);
+      const img = card.querySelector('.card-image');
+      img.src = `/IIC/Images/Members/${item['Image-src']}`;
+      img.alt = item.Name;
+
+      const name = card.querySelector('.card-name');
+      name.textContent = item.Name;
+
+      const branch = card.querySelector('.branch');
+      branch.textContent = item.Branch;
+
+      const role = card.querySelector('.role');
+      role.textContent = item.Role;
+      cardContainer.appendChild(card);
+    });
+    cardTemplate.style.display = 'none';
+})
+
+.catch(error => {
+    console.error('Error:', error);
+});
