@@ -39,7 +39,7 @@ fetch('/IIC/Data/faculty-section.json')
     console.error('Error:', error);
 });
 
-fetch('/IIC/Data/student-section.json')
+fetch('/IIC/Data/student-members.json')
   .then(response => {
     console.log('Fetching URL:', response.url); 
     if (!response.ok) {
