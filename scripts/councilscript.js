@@ -50,22 +50,22 @@ fetch('/IIC/Data/student-members.json')
 
   .then(data => {
     const cardContainer = document.getElementById('card-container-student');
-    const cardTemplate = document.getElementById('card-template');
+    const cardTemplate = document.getElementById('card-template-student');
 
     data.forEach((item, index) => {
       const card = cardTemplate.cloneNode(true);
-      const img = card.querySelector('.card-image');
+      const img = card.querySelector('.card-image-student');
       img.src = `/IIC/Images/Members/${item['Image-src']}`;
       img.alt = item.Name;
 
-      const name = card.querySelector('.card-name');
+      const name = card.querySelector('.card-name-student');
       name.textContent = item.Name;
 
-      const branch = card.querySelector('.branch');
-      branch.textContent = item.Branch;
+      const post1 = card.querySelector('.card-branch');
+      post1.textContent = item.Branch;
 
-      const role = card.querySelector('.role');
-      role.textContent = item.Role;
+      const post2 = card.querySelector('.card-role');
+      post2.textContent = item.Role;
       cardContainer.appendChild(card);
     });
     cardTemplate.style.display = 'none';
