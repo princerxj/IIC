@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f5f5, #eaeaea);
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.title {
+    color: #ffce00;
+    font-weight: bold;
+}
+
+.title span:first-child {
+    font-size: 18px;
+    display: block;
+}
+
+.title span:last-child {
+    font-size: 16px;
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: #ffce00;
+    margin: 5px 0;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul li {
+    position: relative;
+}
+
+.nav-bar ul li a {
+    color: #ffce00;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: 0.3s;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #ffce00;
+    color: #333;
+}
+
+.main-content {
+    padding-top: 90px;
+}
+
+.underconstruction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.underconstruction img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #222;
+    color: #ddd;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    color: #ddd;
+}
+
+.institute-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.institute-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.institute-text h4 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.location,
+.website {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: #ffc107;
+    margin-right: 8px;
+}
+
+.website-link {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.website-link:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+.quick-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+}
+
+.quick-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+    color: #ffc107;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    margin-bottom: 8px;
+}
+
+.social-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+.social-links a:hover {
+    color: #ffc107;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+.developedby {
+    padding: 15px 0;
+    text-align: center;
+    background-color: #444444;
+}
+
+.developedby p {
+    color: #ddd;
+}
+
+.developedby p a{
+    background-color: transparent;
+    color: red;
+    list-style-type: none;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1320px) {
+    .underconstruction img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .underconstruction img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    .underconstruction img {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 1320px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+    header {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-bar {
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        transition: max-height 0.3s ease;
+        z-index: 2;
+    }
+
+    .nav-bar.active {
+        max-height: 250px; 
+    }
+
+    .nav-bar ul {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-bar ul li {
+        margin: 10px 0;
+    }
+}
